@@ -27,7 +27,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.defer_refresh_rate_when_off=1 \
     vendor.display.enable_fp_monitor=1 \
     vendor.display.enable_hist_intr=1 \
-    vendor.display.idle_time=0
+    vendor.display.idle_time=0 \
+    vendor.display.override_doze_mode=1
 
 # Dolby
 PRODUCT_COPY_FILES += \
