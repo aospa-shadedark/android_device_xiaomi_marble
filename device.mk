@@ -27,7 +27,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.idle_time=0
 
 PRODUCT_PRODUCT_PROPERTIES += \
-    debug.graphics.game_default_frame_rate.disabled=true
+    debug.graphics.game_default_frame_rate.disabled=true \
+    ro.surface_flinger.clear_slots_with_set_layer_buffer=true
 
 # Dolby
 PRODUCT_COPY_FILES += \
