@@ -26,6 +26,9 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.enable_hist_intr=1 \
     vendor.display.idle_time=0
 
+PRODUCT_PRODUCT_PROPERTIES += \
+    debug.graphics.game_default_frame_rate.disabled=true
+
 # Dolby
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
