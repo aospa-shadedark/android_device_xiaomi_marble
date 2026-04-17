@@ -381,4 +381,10 @@
          relies on this value will not be sized correctly. -->
     <item format="float" name="pixel_pitch" type="dimen">64.37</item>
 
+    <!-- Whether to enable glanceable hub features on this device. -->
+    <bool name="config_glanceableHubEnabled">true</bool>
+
+    <!-- Whether glanceable hub is enabled by default. -->
+    <bool name="config_glanceableHubEnabledByDefault">true</bool>
+
 </resources>
