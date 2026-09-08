@@ -1034,7 +1034,6 @@ vendor/lib64/libsdr2hdr.so
 vendor/lib64/libsre.so
 vendor/lib64/libtruetone.so
 vendor/lib64/libvideomode.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so;MODULE_SUFFIX=_vendor
 
 # Display calibration
 vendor/etc/display/qdcm_calib_data_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.json
