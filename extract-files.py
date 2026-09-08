@@ -61,7 +61,6 @@ lib_fixups: lib_fixups_user_type = {
         'vendor.qti.ims.*',
         'vendor.qti.latency*',
         'vendor.xiaomi.hardware.campostproc@1.0',
-        'vendor.xiaomi.hardware.displayfeature@1.0',
     ): lib_fixup_vendor_suffix,
     'libwpa_client': lib_fixup_remove,
 }
