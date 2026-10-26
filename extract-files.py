@@ -96,6 +96,9 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/camera/pureView_parameter.xml': blob_fixup().regex_replace(r'=([0-9]+)>', r'="\1">'),
     'vendor/lib64/libcamximageformatutils.so': blob_fixup()
         .replace_needed('vendor.qti.hardware.display.config-V2-ndk_platform.so', 'vendor.qti.hardware.display.config-V2-ndk.so'),
+    'vendor/etc/audio/sku_ukee/resourcemanager_ukee_mtp.xml': blob_fixup()
+        .regex_replace(r'(<name>PAL_STREAM_VOICE_CALL</name>\s*<priority>)2(</priority>)', r'\g<1>1\g<2>')
+        .regex_replace(r'(<name>PAL_STREAM_VOIP_RX</name>[\s\S]*?<priority>)3(</priority>)', r'\g<1>2\g<2>'),
     'vendor/lib64/libgf_hal.so': blob_fixup().binary_regex_replace(
         rb'\[%s\] openat: %s xiaomi_sysfs_fd,failed:\[fingerdown\]',
         b'[%s] openat: xiaomi_sysfs_fd,failed:[fingerdown]   ',
